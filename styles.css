@@ -55,6 +55,14 @@ body:has(.author:hover) .letters {
   text-decoration: none;
 }
 
+.img-social {
+  transition: all 0.30s;
+}
+
+.img-social:hover {
+  transform: scale(1.5);
+}
+
 #navbar a:hover {
   animation: underline 0.7s linear infinite;
 }
@@ -66,6 +74,7 @@ body:has(.author:hover) .letters {
 
   50% {
     text-decoration: underline;
+    text-decoration-color: rgb(0, 255, 0);
   }
 
   100% {
@@ -129,7 +138,7 @@ body:has(.author:hover) .letters {
 
 .profile {
   display: flex;
-  min-height: 100vh;
+  min-height: 50vh;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
@@ -138,4 +147,11 @@ body:has(.author:hover) .letters {
 
 footer {
   margin-top: auto;
+}
+
+.grid-footer {
+  display: grid;
+  width: 100%;
+  height: 200px;
+  grid-template-rows: 1fr;
 }
